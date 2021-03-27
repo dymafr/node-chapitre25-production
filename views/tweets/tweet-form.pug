@@ -2,8 +2,7 @@ extends ../layout
 
 block content
   div(class="d-flex flex-row content mx-auto")
-    div(class="profile-container")
-      include ../includes/profile
+    include ../includes/profile
     div(class="flex-fill")
       form(class="card" method="post" action= tweet._id ? "/tweets/update/" + tweet._id : "/tweets")
         div(class="card-header") Ecrire un tweet

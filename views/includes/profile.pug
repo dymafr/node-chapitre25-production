@@ -10,7 +10,7 @@ div(class="profile-container bg-white mr-3 d-flex flex-column")
       p
         strong Tweet
         br
-        span(class="text-primary")= tweets.length
+        span(class="text-primary")= tweets && tweets.length ? tweets.length : "-"
     div(class="flex-fill")
       p
         strong Following
