@@ -4,25 +4,27 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "NODE_ENV=development nodemon ./bin/www",
-    "start:prod": "NODE_ENV=production nodemon ./bin/www",
+    "start": "nodemon --env-file=.env ./bin/www",
+    "start:prod": "nodemon --env-file=.env.production ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.1",
-    "connect-mongo": "^4.4.1",
-    "errorhandler": "^1.5.1",
-    "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "mongoose": "^5.12.2",
-    "morgan": "^1.10.0",
-    "multer": "^1.4.2",
-    "nodemon": "^2.0.7",
-    "passport": "^0.4.1",
+    "bcrypt": "^6.0.0",
+    "connect-mongo": "^6.0.0",
+    "errorhandler": "^1.5.2",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "mongoose": "^9.9.2",
+    "morgan": "^1.11.0",
+    "multer": "^2.2.0",
+    "passport": "^0.7.0",
     "passport-local": "^1.0.0",
-    "pm2": "^4.5.5",
-    "pug": "^3.0.2"
+    "pm2": "^7.0.3",
+    "pug": "^3.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
